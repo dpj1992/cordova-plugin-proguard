@@ -106,7 +106,45 @@
 -dontwarn org.codehaus.jackson.map.ext.*
 -dontwarn com.worklight.androidgap.push.GCMIntentService
 -dontwarn com.worklight.androidgap.plugin.WLInitializationPlugin
-
--dontwarn android.support.v4.**
+-dontwarn com.fasterxml.jackson.databind.ext.DOMSerializer
+-dontwarn com.x5.template.filters.Base64DecodeFilter
+-dontwarn com.x5.template.filters.Calc
+-dontwarn com.x5.util.ObjectDataMap$MadRobotIntrospector
+-dontwarn org.chromium.base.multidex.ChromiumMultiDexInstaller
+-dontwarn org.springframework.http.client.CommonsClientHttpRequest
+-dontwarn org.springframework.http.converter.xml.SimpleXmlHttpMessageConverter
+-dontwarn org.springframework.http.converter.json.GsonHttpMessageConverter
+-dontwarn org.springframework.http.converter.json.MappingJacksonHttpMessageConverter
+-dontwarn org.springframework.http.converter.feed.AbstractWireFeedHttpMessageConverter
+-dontwarn org.springframework.http.converter.feed.SyndFeedHttpMessageConverter
+-dontwarn org.springframework.http.client.CommonsClientHttpResponse
+-dontwarn android.support.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
+-dontwarn org.springframework.http.converter.feed.AtomFeedHttpMessageConverter
+-dontwarn org.springframework.http.client.CommonsClientHttpRequestFactory
+-dontwarn com.x5.util.ObjectDataMap$StandardIntrospector
+-dontwarn com.x5.template.filters.Base64EncodeFilter
+-dontwarn org.springframework.http.converter.feed.RssChannelHttpMessageConverter
+-dontwarn cl.ionix.ilcat.android.OTTIntentService
+
+
+-keep class org.crosswalk.** { *; }
+-dontwarn org.crosswalk.**
+-dontnote org.crosswalk.**
+
+-keep class org.xwalk.core.** { *; }
+-keep class SevenZip.** { *; }
+-keep class cl.bancochile.** { *; }
+-keep class com.adobe.phonegap.** { *; }
+-keep class com.crypho.plugins.** { *; }
+-keep class com.csvreader.** { *; }
+-keep class com.x5.template.** { *; }
+-keep class com.x5.util.** { *; }
+-keep class javax.annotation.** { *; }
+-keep class me.leolin.shortcutbadger.** { *; }
+-keep class net.minidev.json.** { *; }
+-keep class org.apache.http.** { *; }
+-keep class android.support.** { *; }
+-keep class com.fasterxml.** { *; }
+-keep class org.chromium.** { *; }
